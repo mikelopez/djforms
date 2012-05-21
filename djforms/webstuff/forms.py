@@ -12,20 +12,20 @@ from settings import MEDIA_ROOT
 # forms example - Marcos Lopez - dev@scidentify.info
 
 class TeachersForm(ModelForm):
-	class Meta:
-		model = Teachers
-	
-	def clean(self):
-		# clean data
-		return self.cleaned_data
+  class Meta:
+    model = Teachers
+  
+  def clean(self):
+    # clean data
+    return self.cleaned_data
 
-	def clean_fname(self):
-		# clean the first name field
-		return self.cleaned_data
+  def clean_fname(self):
+    # clean the first name field
+    return self.cleaned_data
 
-	def save(self):
-		# do stuff before saving
-		pass
+  def save(self):
+    # do stuff before saving
+    pass
 
   def update(self, id):
     for k,v in self.cleaned_data.items():
@@ -33,20 +33,20 @@ class TeachersForm(ModelForm):
 
 
 class StudentForm(ModelForm):
-	class Meta:
-		model = Student
-	
-	def clean(self):
-		# clean data
-		return self.cleaned_data
+  class Meta:
+    model = Student
+  
+  def clean(self):
+    # clean data
+    return self.cleaned_data
 
-	def clean_fname(self):
-		# clean the first name field
-		return self.cleaned_data
+  def clean_fname(self):
+    # clean the first name field
+    return self.cleaned_data
 
-	def save(self):
-		# do stuff before saving
-		pass
+  def save(self):
+    # do stuff before saving
+    pass
 
   def update(self, id):
     for k,v in self.cleaned_data.items():
